@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> 
+    <!-- index.html -> index.js -> App.js -->
+    <!-- div태그인 사각형의 id값은 index.js에서 사용되고 있음 
+     그러고 index.js에서 root라는 변수 안에 App이라는 태그는 App.js에서 사용되고 있음 -->
+     <!-- index.html 파일의 div태그 사각형 안에서의 화면이 계속 변하고 있었음 
+      -> 그 화면을 변화시키는 건 App.js에서 바뀌고 있는데
+      App.js에서의 진입점은 index.js 이다 
+      => App.js에서는 html과 js를 같이 쓸 수 있음 -->
+      <!-- App.js에서 내가 만든 파일을 보기 위에서는 index.js의 진입점을 거쳐서 index.html에서 보이게 된다(App.js에서 App은 화면을 구성하는 요소들인데 거기서 화면의 구성요소만 계속 바꾼다고 생각하면 됨) -->
+    <!-- 화면을 변경하고 싶을 때 index.js의 App태그를 변경시켜주면 됨 -->
+    <!-- Single Page Application : 새로고침이 필요없다(새 페이지를 넘어갈 때마다 정보를 가져오지 않아도 된다) -->
+    <!-- JSX : JavaScipt에 XML을 추가한 확장문법(하나의 파일에 JavaScrpt와 HTML을 동시에 작성한다) 
+             => JavaScrpt와 HTML을 분리하지 않기 때문에 가독성이 높고 작성하기 쉽다-->
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
